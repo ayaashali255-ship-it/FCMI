@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "id": "0001",
+    "name": "Verified Community Tactic",
+    "formation": "4-3-3 Attack",
+    "gameMode": "Manager Mode",
+    "rating": 96,
+    "verified": true,
+    "buildUp": {
+      "speed": 2,
+      "passing": 1,
+      "mentality": "Balanced"
+    },
+    "attack": {
+      "passing": 2,
+      "crossing": 1,
+      "shooting": 3,
+      "positioning": "Organized"
+    },
+    "defence": {
+      "pressure": 2,
+      "aggression": 2,
+      "width": 2,
+      "backLine": "Cover"
+    }
+  }
+]
