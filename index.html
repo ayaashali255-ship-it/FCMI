@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -58,11 +57,11 @@ transition:.3s;
 
 nav a:hover{
 background:#00ff66;
-color:#000;
+color:black;
 }
 
 .hero{
-padding:70px 20px;
+padding:80px 20px;
 text-align:center;
 background:linear-gradient(180deg,#111827,#0b1017);
 }
@@ -79,7 +78,7 @@ color:#00ff66;
 .hero p{
 max-width:700px;
 margin:auto;
-color:#bfbfbf;
+color:#bbbbbb;
 }
 
 .search{
@@ -100,7 +99,7 @@ outline:none;
 display:flex;
 justify-content:center;
 gap:15px;
-margin-top:25px;
+margin-top:30px;
 flex-wrap:wrap;
 }
 
@@ -126,54 +125,10 @@ color:white;
 transform:translateY(-4px);
 }
 
-.stats,
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-gap:25px;
-padding:35px;
-}
-
-.stat,
-.card{
-background:#151d29;
-padding:28px;
-border-radius:18px;
-border:1px solid rgba(0,255,102,.25);
-transition:.3s;
-text-align:center;
-}
-
-.card:hover,
-.stat:hover{
-transform:translateY(-8px);
-box-shadow:0 0 20px rgba(0,255,102,.25);
-}
-
-.stat h2,
-.card h2,
-.card h3{
-color:#00ff66;
-margin-bottom:10px;
-}
-
-.section-title{
-text-align:center;
-font-size:34px;
-margin-top:40px;
-}
-
-footer{
-background:#111827;
-padding:35px;
-text-align:center;
-margin-top:60px;
-color:#999;
-}
-
 </style>
 
 </head>
+
 <body>
 
 <header>
@@ -181,12 +136,13 @@ color:#999;
 <div class="logo">FCMI</div>
 
 <nav>
+
 <a href="#">Home</a>
 <a href="#">Players</a>
 <a href="#">Formations</a>
 <a href="#">Tactics</a>
 <a href="#">Research</a>
-<a href="#">News</a>
+
 </nav>
 
 </header>
@@ -196,23 +152,94 @@ color:#999;
 <h1><span>FC</span> Mobile Intelligence</h1>
 
 <p>
+
 Evidence. Intelligence. Evolution.
+
 <br><br>
+
 The independent intelligence platform for FC Mobile players.
-Discover verified Manager Mode tactics, player analysis,
-formations and research.
+
 </p>
 
 <div class="search">
-<input type="text" placeholder="Search players, formations, tactics...">
+
+<input type="text" placeholder="Search players, formations and tactics...">
+
 </div>
 
 <div class="buttons">
+
 <a href="#" class="btn green">Explore</a>
+
 <a href="#" class="btn dark">Latest Meta</a>
+
 </div>
 
 </section>
+
+<h2 class="section-title">Platform Statistics</h2>
+
+<section class="stats">
+
+<div class="stat">
+<h2>157,464</h2>
+<p>Tactical Combinations</p>
+</div>
+
+<div class="stat">
+<h2>250+</h2>
+<p>Verified Tactics</p>
+</div>
+
+<div class="stat">
+<h2>50+</h2>
+<p>Formations</p>
+</div>
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Research</p>
+</div>
+
+</section>
+
+<h2 class="section-title">Explore FCMI</h2>
+
+<section class="cards">
+
+<div class="card">
+<h3>⚽ Player Database</h3>
+<p>Gameplay reviews and intelligence.</p>
+</div>
+
+<div class="card">
+<h3>🧠 Manager Mode Lab</h3>
+<p>Verified tactics and testing.</p>
+</div>
+
+<div class="card">
+<h3>📐 Formation Center</h3>
+<p>Every formation explained.</p>
+</div>
+
+<div class="card">
+<h3>📊 Meta Rankings</h3>
+<p>Best players this season.</p>
+</div>
+
+<div class="card">
+<h3>📰 Patch Notes</h3>
+<p>Gameplay updates analysed.</p>
+</div>
+
+<div class="card">
+<h3>🤖 AI Assistant</h3>
+<p>Coming Soon.</p>
+</div>
+
+</section>
+
+<h2 class="section-title">Platform Statistics</h2>
 
 <section class="stats">
 
@@ -310,30 +337,458 @@ formations and research.
 
 <div class="card">
 <h3>AI Assistant</h3>
+
 <p>
-✔ Squad Analysis<br><br>
-✔ Best Formation<br><br>
-✔ Best Tactics<br><br>
-✔ Meta Suggestions<br><br>
+
+✔ Squad Analysis
+
+<br><br>
+
+✔ Best Formation
+
+<br><br>
+
+✔ Best Tactics
+
+<br><br>
+
+✔ Meta Suggestions
+
+<br><br>
 
 <b style="color:#00ff66;">Coming Soon</b>
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🚀 Next Updates</h3>
+
+<p>
+
+✔ Player Database
+
+<br><br>
+
+✔ Formation Center
+
+<br><br>
+
+✔ Tactic Finder
+
+<br><br>
+
+✔ Community Rankings
+
+</p>
+
+</div>
+
+</section>
+
+<h2 class="section-title">🏆 Player Database</h2>
+
+<section class="cards">
+
+<div class="card">
+<h3>🔍 Search Players</h3>
+<p>
+Search by player name, club, nation or position.
 </p>
 </div>
 
 <div class="card">
-<h3>🚀 Next Updates</h3>
+<h3>⭐ Featured Player</h3>
+<h2 style="color:#00ff66;">Lionel Messi</h2>
+
 <p>
-✔ Player Database<br><br>
-✔ Formation Center<br><br>
-✔ Tactic Finder<br><br>
-✔ Community Rankings
+OVR: 125
+
+<br><br>
+
+Position: RW / CAM
+
+<br><br>
+
+Weak Foot: ★★★★☆
+
+<br><br>
+
+Skill Moves: ★★★★★
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🛡️ Top Defenders</h3>
+
+<p>
+
+• Saliba
+
+<br><br>
+
+• Van Dijk
+
+<br><br>
+
+• Rúben Dias
+
+<br><br>
+
+• Marquinhos
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎯 Top Attackers</h3>
+
+<p>
+
+• Mbappé
+
+<br><br>
+
+• Messi
+
+<br><br>
+
+• Haaland
+
+<br><br>
+
+• Vinícius Jr.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>⚙️ Database Status</h3>
+
+<h2 style="color:#00ff66;">Online</h2>
+
+<p>
+Player database is expanding with every update.
+</p>
+
+</div>
+
+</section>
+
+<h2 class="section-title">📐 Formation Center</h2>
+
+<section class="cards">
+
+<div class="card">
+<h3>4-3-3 Attack</h3>
+<p>
+Best for:
+<br><br>
+✔ Manager Mode
+<br>
+✔ VSA
+<br>
+✔ Balanced Gameplay
+</p>
+</div>
+
+<div class="card">
+<h3>4-2-1-3</h3>
+<p>
+Best for:
+<br><br>
+✔ Possession
+<br>
+✔ Fast Build Up
+<br>
+✔ Counter Attack
+</p>
+</div>
+
+<div class="card">
+<h3>3-5-2</h3>
+<p>
+Best for:
+<br><br>
+✔ Midfield Control
+<br>
+✔ Pressing
+<br>
+✔ Wide Play
+</p>
+</div>
+
+<div class="card">
+<h3>4-1-2-1-2 Narrow</h3>
+<p>
+Best for:
+<br><br>
+✔ Through Balls
+<br>
+✔ Short Passing
+<br>
+✔ Central Attack
+</p>
+</div>
+
+<div class="card">
+<h3>More Formations</h3>
+<p>
+New formations and tactical analysis will be added in future updates.
 </p>
 </div>
 
 </section>
+
+<h2 class="section-title">🧠 Tactic Finder</h2>
+
+<section class="cards">
+
+<div class="card">
+<h3>Manager Mode</h3>
+<p>
+Find tactics optimized for AI gameplay and consistent performance.
+</p>
+</div>
+
+<div class="card">
+<h3>VS Attack</h3>
+<p>
+Discover formations and tactics focused on quick chances and high scoring.
+</p>
+</div>
+
+<div class="card">
+<h3>Head to Head</h3>
+<p>
+Explore tactics designed for possession, pressing and manual play.
+</p>
+</div>
+
+<div class="card">
+<h3>Custom Tactics</h3>
+<p>
+Save,
+
+<h2 class="section-title">🌍 Community Hub</h2>
+
+<section class="cards">
+
+<div class="card">
+<h3>🏅 Top Community Tactics</h3>
+
+<p>
+
+Discover the highest-rated tactics submitted by FCMI users.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🔥 Trending Players</h3>
+
+<p>
+
+See which FC Mobile players are currently dominating the meta.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📊 Community Polls</h3>
+
+<p>
+
+Vote for the best formations, tactics and players every week.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💬 Discussions</h3>
+
+<p>
+
+Join community discussions and share your own experiences.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏆 Hall of Fame</h3>
+
+<p>
+
+The best community tactic creators will be featured here.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🚀 More Features</h3>
+
+<p>
+
+Leaderboards, tournaments and player guides coming soon.
+
+</p>
+
+</div>
+
+</section>
+
+<h2 class="section-title">📰 News & Updates Center</h2>
+
+<section class="cards">
+
+<div class="card">
+<h3>📢 Latest FC Mobile News</h3>
+<p>
+Stay updated with the latest FC Mobile announcements and content releases.
+</p>
+</div>
+
+<div class="card">
+<h3>⚽ Event Tracker</h3>
+<p>
+Follow current and upcoming events with detailed rewards and timelines.
+</p>
+</div>
+
+<div class="card">
+<h3>🔄 Patch Notes</h3>
+<p>
+Read gameplay changes, balance updates and bug fixes after every release.
+</p>
+</div>
+
+<div class="card">
+<h3>📅 Upcoming Content</h3>
+<p>
+See what's coming next, including new players, events and game modes.
+</p>
+</div>
+
+<div class="card">
+<h3>⭐ Featured Article</h3>
+<p>
+Weekly strategy guides and gameplay tips selected by the FCMI team.
+</p>
+</div>
+
+<div class="card">
+<h3>🚀 Future Integrations</h3>
+<p>
+Live news feeds, notifications and personalized update tracking are planned.
+</p>
+</div>
+
+</section>
+
+<h2 class="section-title">👤 User Profile Center</h2>
+
+<section class="cards">
+
+<div class="card">
+<h3>👤 My Profile</h3>
+<p>
+View your saved squads, favourite players and personal statistics.
+</p>
+</div>
+
+<div class="card">
+<h3>⭐ Favourite Players</h3>
+<p>
+Save your favourite FC Mobile players for quick access.
+</p>
+</div>
+
+<div class="card">
+<h3>📋 Saved Tactics</h3>
+<p>
+Bookmark your best Manager Mode, VSA and H2H tactics.
+</p>
+</div>
+
+<div class="card">
+<h3>🏅 Achievements</h3>
+<p>
+Earn badges by contributing guides, tactics and community posts.
+</p>
+</div>
+
+<div class="card">
+<h3>📈 Activity</h3>
+<p>
+Track your recent searches, saved formations and tactic history.
+</p>
+</div>
+
+<div class="card">
+<h3>☁ Cloud Sync</h3>
+<p>
+Future support for syncing your favourites across devices.
+</p>
+</div>
+
+</section>
+
+<h2 class="section-title">🧠 AI Intelligence Center</h2>
+
+<section class="cards">
+
+<div class="card">
+<h3>🤖 AI Squad Analyzer</h3>
+<p>
+Upload your FC Mobile squad and receive AI-powered suggestions for improvements.
+</p>
+</div>
+
+<div class="card">
+<h3>⚽ AI Player Comparison</h3>
+<p>
+Compare two players based on gameplay, work rates, positioning and community feedback.
+</p>
+</div>
+
+<div class="card">
+<h3>📊 Meta Predictor</h3>
+<p>
+See which formations and tactics are expected to perform best after future updates.
+</p>
+</div>
+
+<div class="card">
+<h3>🧩 Squad Builder</h3>
+<p>
+Create your dream squad with chemistry, budget and position recommendations.
+</p>
+</div>
+
+<div class="card">
+<h3>📈 Match Analyzer
+
 <footer>
 
-<h3 style="color:#00ff66;">FCMI Alpha v0.4</h3>
+<h3 style="color:#00ff66;">FCMI Alpha v1.0</h3>
 
 <br>
 
@@ -343,59 +798,14 @@ Independent fan-made project.
 
 <br><br>
 
-Not affiliated with Electronic Arts.
+FCMI is an independent community project created for FC Mobile players.
 
 <br><br>
 
-Built for the FC Mobile community.
+FCMI is not affiliated with or endorsed by Electronic Arts (EA).
 
 </p>
-<h2 class="section-title">🏆 Player Database</h2>
 
-<section class="cards">
-
-<div class="card">
-<h3>🔍 Search Players</h3>
-<p>Search by player name, club, nation, or position.</p>
-</div>
-
-<div class="card">
-<h3>⭐ Featured Player</h3>
-<h2 style="color:#00ff66;">Lionel Messi</h2>
-<p>OVR: 125<br><br>
-Position: RW / CAM<br><br>
-Weak Foot: ★★★★☆<br><br>
-Skill Moves: ★★★★★
-</p>
-</div>
-
-<div class="card">
-<h3>🛡️ Top Defenders</h3>
-<p>
-• Saliba<br><br>
-• Van Dijk<br><br>
-• Rúben Dias<br><br>
-• Marquinhos
-</p>
-</div>
-
-<div class="card">
-<h3>🎯 Top Attackers</h3>
-<p>
-• Mbappé<br><br>
-• Messi<br><br>
-• Haaland<br><br>
-• Vinícius Jr.
-</p>
-</div>
-
-<div class="card">
-<h3>⚙️ Database Status</h3>
-<h2 style="color:#00ff66;">Online</h2>
-<p>Player database is expanding with every update.</p>
-</div>
-
-</section>
 </footer>
 
 </body>
