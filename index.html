@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>FCMI - FC Mobile Intelligence</title>
 
 <style>
@@ -17,21 +20,23 @@ font-family:Arial,Helvetica,sans-serif;
 body{
 background:#0b1017;
 color:white;
+line-height:1.6;
 }
 
 header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:18px 25px;
+padding:20px;
 background:#111827;
 border-bottom:2px solid #00ff66;
 position:sticky;
 top:0;
+z-index:100;
 }
 
 .logo{
-font-size:32px;
+font-size:34px;
 font-weight:bold;
 color:#00ff66;
 }
@@ -45,9 +50,9 @@ flex-wrap:wrap;
 nav a{
 color:white;
 text-decoration:none;
+background:#1b2430;
 padding:10px 16px;
-border-radius:10px;
-background:#1c2431;
+border-radius:12px;
 transition:.3s;
 }
 
@@ -63,7 +68,7 @@ background:linear-gradient(180deg,#111827,#0b1017);
 }
 
 .hero h1{
-font-size:46px;
+font-size:48px;
 margin-bottom:15px;
 }
 
@@ -74,8 +79,7 @@ color:#00ff66;
 .hero p{
 max-width:700px;
 margin:auto;
-color:#b8b8b8;
-line-height:1.8;
+color:#bfbfbf;
 }
 
 .search{
@@ -93,18 +97,18 @@ outline:none;
 }
 
 .buttons{
-margin-top:30px;
 display:flex;
 justify-content:center;
 gap:15px;
+margin-top:25px;
 flex-wrap:wrap;
 }
 
 .btn{
 padding:14px 28px;
 border-radius:12px;
-text-decoration:none;
 font-weight:bold;
+text-decoration:none;
 transition:.3s;
 }
 
@@ -122,34 +126,7 @@ color:white;
 transform:translateY(-4px);
 }
 
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:20px;
-padding:40px;
-}
-
-.stat{
-background:#151d29;
-padding:30px;
-border-radius:16px;
-text-align:center;
-border:1px solid rgba(0,255,102,.25);
-}
-
-.stat h2{
-color:#00ff66;
-font-size:34px;
-margin-bottom:10px;
-}
-
-.section-title{
-text-align:center;
-font-size:34px;
-margin-top:30px;
-margin-bottom:30px;
-}
-
+.stats,
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
@@ -157,36 +134,46 @@ gap:25px;
 padding:35px;
 }
 
+.stat,
 .card{
 background:#151d29;
 padding:28px;
 border-radius:18px;
-transition:.3s;
 border:1px solid rgba(0,255,102,.25);
+transition:.3s;
+text-align:center;
 }
 
-.card:hover{
+.card:hover,
+.stat:hover{
 transform:translateY(-8px);
-box-shadow:0 0 20px rgba(0,255,102,.35);
+box-shadow:0 0 20px rgba(0,255,102,.25);
 }
 
+.stat h2,
+.card h2,
 .card h3{
 color:#00ff66;
-margin-bottom:12px;
+margin-bottom:10px;
+}
+
+.section-title{
+text-align:center;
+font-size:34px;
+margin-top:40px;
 }
 
 footer{
-margin-top:50px;
 background:#111827;
-padding:30px;
+padding:35px;
 text-align:center;
+margin-top:60px;
 color:#999;
 }
 
 </style>
 
 </head>
-
 <body>
 
 <header>
@@ -194,14 +181,12 @@ color:#999;
 <div class="logo">FCMI</div>
 
 <nav>
-
 <a href="#">Home</a>
 <a href="#">Players</a>
 <a href="#">Formations</a>
 <a href="#">Tactics</a>
 <a href="#">Research</a>
 <a href="#">News</a>
-
 </nav>
 
 </header>
@@ -211,29 +196,20 @@ color:#999;
 <h1><span>FC</span> Mobile Intelligence</h1>
 
 <p>
-
 Evidence. Intelligence. Evolution.
-
 <br><br>
-
 The independent intelligence platform for FC Mobile players.
-
-Discover verified Manager Mode tactics, player analysis, formations and research.
-
+Discover verified Manager Mode tactics, player analysis,
+formations and research.
 </p>
 
 <div class="search">
-
 <input type="text" placeholder="Search players, formations, tactics...">
-
 </div>
 
 <div class="buttons">
-
 <a href="#" class="btn green">Explore</a>
-
 <a href="#" class="btn dark">Latest Meta</a>
-
 </div>
 
 </section>
@@ -241,100 +217,123 @@ Discover verified Manager Mode tactics, player analysis, formations and research
 <section class="stats">
 
 <div class="stat">
-
 <h2>157,464</h2>
-
 <p>Tactical Combinations</p>
-
 </div>
 
 <div class="stat">
-
 <h2>250+</h2>
-
 <p>Verified Tactics</p>
-
 </div>
 
 <div class="stat">
-
 <h2>50+</h2>
-
 <p>Formations</p>
-
 </div>
 
 <div class="stat">
-
 <h2>24/7</h2>
-
 <p>Research</p>
-
 </div>
 
 </section>
 
-<h2 class="section-title">
-
-Explore FCMI
-
-</h2>
+<h2 class="section-title">Explore FCMI</h2>
 
 <section class="cards">
 
 <div class="card">
-
 <h3>⚽ Player Database</h3>
-
 <p>Gameplay reviews and intelligence.</p>
-
 </div>
 
 <div class="card">
-
 <h3>🧠 Manager Mode Lab</h3>
-
 <p>Verified tactics and testing.</p>
-
 </div>
 
 <div class="card">
-
 <h3>📐 Formation Center</h3>
-
 <p>Every formation explained.</p>
-
 </div>
 
 <div class="card">
-
 <h3>📊 Meta Rankings</h3>
-
 <p>Best players this season.</p>
-
 </div>
 
 <div class="card">
-
 <h3>📰 Patch Notes</h3>
-
 <p>Gameplay updates analysed.</p>
-
 </div>
 
 <div class="card">
-
 <h3>🤖 AI Assistant</h3>
-
 <p>Coming Soon.</p>
-
 </div>
 
 </section>
 
+<h2 class="section-title">🔥 Live Meta Dashboard</h2>
+
+<section class="cards">
+
+<div class="card">
+<h3>🏆 Meta Formation</h3>
+<h2>4-3-3 Attack</h2>
+<p>Highest performing formation this week.</p>
+</div>
+
+<div class="card">
+<h3>⭐ Featured Tactic</h3>
+<h2>#83742</h2>
+<p>Community Rating ★★★★★</p>
+</div>
+
+<div class="card">
+<h3>📈 Meta Status</h3>
+<h2>A+</h2>
+<p>Updated Daily</p>
+</div>
+
+<div class="card">
+<h3>⚡ Research</h3>
+<h2>7 New Reports</h2>
+<p>Fresh Manager Mode Intelligence.</p>
+</div>
+
+</section>
+
+<h2 class="section-title">🤖 FCMI AI</h2>
+
+<section class="cards">
+
+<div class="card">
+<h3>AI Assistant</h3>
+<p>
+✔ Squad Analysis<br><br>
+✔ Best Formation<br><br>
+✔ Best Tactics<br><br>
+✔ Meta Suggestions<br><br>
+
+<b style="color:#00ff66;">Coming Soon</b>
+</p>
+</div>
+
+<div class="card">
+<h3>🚀 Next Updates</h3>
+<p>
+✔ Player Database<br><br>
+✔ Formation Center<br><br>
+✔ Tactic Finder<br><br>
+✔ Community Rankings
+</p>
+</div>
+
+</section>
 <footer>
 
-<h3 style="color:#00ff66;">FCMI Alpha v0.3</h3>
+<h3 style="color:#00ff66;">FCMI Alpha v0.4</h3>
 
 <br>
 
@@ -342,106 +341,15 @@ Explore FCMI
 
 Independent fan-made project.
 
-<br>
+<br><br>
 
 Not affiliated with Electronic Arts.
 
-</p>
-
-<!-- ========================= -->
-<!-- FCMI v0.4 LIVE DASHBOARD -->
-<!-- ========================= -->
-
-<h2 class="section-title">
-🔥 Live Meta Dashboard
-</h2>
-
-<section class="cards">
-
-<div class="card">
-<h3>🏆 Meta Formation</h3>
-<h2 style="color:#00ff66;">4-3-3 Attack</h2>
-<p>Highest performing formation this week.</p>
-</div>
-
-<div class="card">
-<h3>⭐ Featured Tactic</h3>
-<h2 style="color:#00ff66;">#83742</h2>
-<p>Community Rating ★★★★★</p>
-</div>
-
-<div class="card">
-<h3>📈 Meta Status</h3>
-<h2 style="color:#00ff66;">A+</h2>
-<p>Updated Daily</p>
-</div>
-
-<div class="card">
-<h3>⚡ Research</h3>
-<h2 style="color:#00ff66;">7 New Reports</h2>
-<p>Fresh Manager Mode Intelligence.</p>
-</div>
-
-</section>
-
-<h2 class="section-title">
-🤖 FCMI AI
-</h2>
-
-<section class="cards">
-
-<div class="card">
-<h3>AI Assistant</h3>
-
-<p>
-
-✔ Squad Analysis
-
 <br><br>
 
-✔ Best Formation
-
-<br><br>
-
-✔ Best Tactics
-
-<br><br>
-
-✔ Meta Suggestions
-
-<br><br>
-
-<font color="#00ff66"><b>Coming Soon</b></font>
+Built for the FC Mobile community.
 
 </p>
-
-</div>
-
-<div class="card">
-
-<h3>🚀 Next Updates</h3>
-
-<p>
-
-✔ Player Database
-
-<br><br>
-
-✔ Formation Center
-
-<br><br>
-
-✔ Tactic Finder
-
-<br><br>
-
-✔ Community Rankings
-
-</p>
-
-</div>
-
-</section>
 
 </footer>
 
