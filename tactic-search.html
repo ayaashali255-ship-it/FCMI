@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FCMI | Tactic Search</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0b1017;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px;
+background:#111827;
+border-bottom:2px solid #00ff66;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+color:#00ff66;
+}
+
+.hero{
+padding:50px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:44px;
+color:#00ff66;
+}
+
+.hero p{
+color:#bbb;
+margin-top:10px;
+}
+
+.search{
+max-width:700px;
+margin:30px auto;
+}
+
+.search input{
+
+width:100%;
+padding:18px;
+border:none;
+border-radius:12px;
+font-size:18px;
+
+}
+
+.filters{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:15px;
+padding:25px;
+
+}
+
+.filter{
+
+background:#151d29;
+border:1px solid rgba(0,255,102,.25);
+padding:18px;
+border-radius:15px;
+text-align:center;
+
+}
+
+.filter h3{
+
+color:#00ff66;
+margin-bottom:10px;
+
+}
+
+.card{
+
+margin:25px;
+background:#151d29;
+border:1px solid rgba(0,255,102,.25);
+border-radius:18px;
+padding:25px;
+
+}
+
+.score{
+
+font-size:42px;
+font-weight:bold;
+color:#00ff66;
+margin-top:20px;
+
+}
+
+button{
+
+margin-top:20px;
+padding:14px 24px;
+border:none;
+border-radius:12px;
+background:#00ff66;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+footer{
+
+margin-top:40px;
+padding:25px;
+text-align:center;
+background:#111827;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+FCMI
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Tactic Search</h1>
+
+<p>
+Find the perfect tactic instantly.
+</p>
+
+<div class="search">
+
+<input placeholder="Search Tactic ID, Formation...">
+
+</div>
+
+</section>
+
+<section class="filters">
+
+<div class="filter">
+
+<h3>Formation</h3>
+
+4-3-3 Attack
+
+</div>
+
+<div class="filter">
+
+<h3>Game Mode</h3>
+
+Manager Mode
+
+</div>
+
+<div class="filter">
+
+<h3>Rating</h3>
+
+95+
+
+</div>
+
+<div class="filter">
+
+<h3>Status</h3>
+
+Verified
+
+</div>
+
+</section>
+
+<div class="card">
+
+<h2 style="color:#00ff66;">
+TACTIC #0001
+</h2>
+
+<p>
+
+Formation : 4-3-3 Attack
+
+<br><br>
+
+Game Mode : Manager Mode
+
+<br><br>
+
+Verified Community Tactic
+
+</p>
+
+<div class="score">
+
+96 / 100
+
+</div>
+
+<button>
+
+Open Tactic
+
+</button>
+
+</div>
+
+<footer>
+
+FCMI Intelligence Engine v1
+
+</footer>
+
+</body>
+</html>
