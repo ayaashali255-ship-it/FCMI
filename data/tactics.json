@@ -23,5 +23,30 @@
       "width": 2,
       "backLine": "Cover"
     }
+  },
+  {
+    "id": "0002",
+    "name": "Possession Control",
+    "formation": "4-2-3-1 Wide",
+    "gameMode": "Manager Mode",
+    "rating": 94,
+    "verified": true,
+    "buildUp": {
+      "speed": 1,
+      "passing": 1,
+      "mentality": "Balanced"
+    },
+    "attack": {
+      "passing": 1,
+      "crossing": 1,
+      "shooting": 2,
+      "positioning": "Organized"
+    },
+    "defence": {
+      "pressure": 2,
+      "aggression": 2,
+      "width": 1,
+      "backLine": "Cover"
+    }
   }
 ]
