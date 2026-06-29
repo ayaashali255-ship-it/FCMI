@@ -101,6 +101,31 @@ calculateBalance() {
         (attack + midfield + defence) / 3
     );
 }
+
+detectPlaystyle() {
+
+    if (!this.squad) return "Balanced";
+
+    const formation = this.squad.formation;
+
+    if (formation.startsWith("4-3-3")) {
+        return "Wing Play";
+    }
+
+    if (formation.startsWith("4-2-4")) {
+        return "Counter Attack";
+    }
+
+    if (formation.startsWith("4-1-2-1-2")) {
+        return "Possession";
+    }
+
+    if (formation.startsWith("5")) {
+        return "Defensive";
+    }
+
+    return "Balanced";
+}
 countPositions() {
 
     if (!this.squad || !this.squad.players) {
