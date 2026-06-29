@@ -39,8 +39,9 @@ analyzeSquad() {
 
         defence: this.calculateDefence(),
 
-        balance: this.calculateBalance()
+        balance: this.calculateBalance(),
 
+        playstyle: this.detectPlaystyle()
     };
 
 }
