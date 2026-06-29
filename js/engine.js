@@ -45,15 +45,50 @@ analyzeSquad() {
 
 }
 calculateAttack() {
-    return 90;
+
+    let attack = 0;
+
+    if (!this.squad) return 0;
+
+    attack += this.squad.overall * 0.4;
+
+    if (this.squad.formation.includes("3")) {
+        attack += 10;
+    }
+
+    return Math.round(attack);
+
 }
 
 calculateMidfield() {
-    return 90;
-}
 
+    let midfield = 0;
+
+    if (!this.squad) return 0;
+
+    midfield += this.squad.overall * 0.35;
+
+    if (this.squad.formation.includes("3")) {
+        midfield += 15;
+    }
+
+    return Math.round(midfield);
+
+}
 calculateDefence() {
-    return 90;
+
+    let defence = 0;
+
+    if (!this.squad) return 0;
+
+    defence += this.squad.overall * 0.25;
+
+    if (this.squad.formation.includes("4")) {
+        defence += 15;
+    }
+
+    return Math.round(defence);
+
 }
 
 calculateBalance() {
