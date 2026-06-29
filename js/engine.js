@@ -133,7 +133,22 @@ const positions = this.countPositions();
         if (this.squad.formation === tactic.formation) {
             score += 30;
         }
+// Position Compatibility
+if ((positions.ST || 0) >= 2 && tactic.formation.includes("2")) {
+    score += 10;
+}
 
+if (((positions.LW || 0) + (positions.RW || 0)) >= 2 && tactic.formation.includes("3")) {
+    score += 10;
+}
+
+if ((positions.CAM || 0) >= 1) {
+    score += 5;
+}
+
+if ((positions.CDM || 0) >= 1) {
+    score += 5;
+}
         // Manager Mode bonus
         if (tactic.gameMode === "Manager Mode") {
             score += 20;
