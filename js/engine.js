@@ -159,6 +159,13 @@ const positions = this.countPositions();
         if (this.squad.formation === tactic.formation) {
             score += 30;
         }
+// Playstyle Match
+if (
+    tactic.playstyle &&
+    tactic.playstyle === this.detectPlaystyle()
+) {
+    score += 15;
+}
 // Position Compatibility
 if ((positions.ST || 0) >= 2 && tactic.formation.includes("2")) {
     score += 10;
