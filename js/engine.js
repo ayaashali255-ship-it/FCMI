@@ -101,6 +101,27 @@ calculateBalance() {
         (attack + midfield + defence) / 3
     );
 }
+countPositions() {
+
+    if (!this.squad || !this.squad.players) {
+        return {};
+    }
+
+    const positions = {};
+
+    for (const player of this.squad.players) {
+
+        if (!positions[player.position]) {
+            positions[player.position] = 0;
+        }
+
+        positions[player.position]++;
+
+    }
+
+    return positions;
+
+}
     // Calculate compatibility score
     calculateCompatibility(tactic) {
 
