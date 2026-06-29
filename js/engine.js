@@ -126,7 +126,7 @@ countPositions() {
     calculateCompatibility(tactic) {
 
         let score = 0;
-
+const positions = this.countPositions();
         if (!this.squad) return 0;
 
         // Formation Match
