@@ -21,7 +21,51 @@ class FCMIEngine {
     loadTactics(tactics) {
         this.tactics = tactics;
     }
+analyzeSquad() {
 
+    if (!this.squad) {
+        return null;
+    }
+
+    return {
+
+        formation: this.squad.formation,
+
+        overall: this.squad.overall,
+
+        attack: this.calculateAttack(),
+
+        midfield: this.calculateMidfield(),
+
+        defence: this.calculateDefence(),
+
+        balance: this.calculateBalance()
+
+    };
+
+}
+calculateAttack() {
+    return 90;
+}
+
+calculateMidfield() {
+    return 90;
+}
+
+calculateDefence() {
+    return 90;
+}
+
+calculateBalance() {
+
+    const attack = this.calculateAttack();
+    const midfield = this.calculateMidfield();
+    const defence = this.calculateDefence();
+
+    return Math.round(
+        (attack + midfield + defence) / 3
+    );
+}
     // Calculate compatibility score
     calculateCompatibility(tactic) {
 
